@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Anime List"
 include ':app'
+include ':core'
