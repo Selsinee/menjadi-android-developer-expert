@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.dicoding.animelist">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.dicoding.animelist.MyApplication"
+        android:name=".MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -14,7 +14,10 @@
         android:theme="@style/Theme.AnimeList"
         tools:ignore="AllowBackup">
         <activity
-            android:name="com.dicoding.animelist.MainActivity"
+            android:name=".detail.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AnimeList.NoActionBar">
             <intent-filter>

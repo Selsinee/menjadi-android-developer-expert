@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/drawable/progress_circle.xml" value="0.1" />
+        <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/layout/activity_detail.xml" value="0.13958333333333334" />
+        <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/layout/activity_detail_film.xml" value="0.1" />
         <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/layout/app_bar_main.xml" value="0.20416666666666666" />
         <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
@@ -10,7 +13,10 @@
         <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/layout/fragment_home.xml" value="0.19010416666666666" />
         <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/layout/item_anime.xml" value="0.20416666666666666" />
         <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/layout/nav_header_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/menu/action_menu.xml" value="0.15364583333333334" />
         <entry key="..\:/AS-Apps/AnimeList/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/AS-Apps/AnimeList/core/src/main/res/layout/item_anime.xml" value="0.12760416666666666" />
+        <entry key="..\:/AS-Apps/AnimeList/favorite/src/main/res/layout/activity_favorite.xml" value="0.11354166666666667" />
       </map>
     </option>
   </component>

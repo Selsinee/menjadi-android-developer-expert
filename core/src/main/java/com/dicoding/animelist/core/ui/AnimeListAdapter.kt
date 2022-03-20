@@ -14,7 +14,7 @@ import com.dicoding.core.databinding.ItemAnimeBinding
 /**
  * Created by Seline on 09/03/2022 15:17
  */
-class AnimeListAdapter(private val onClick: (id: String) -> Unit) :
+class AnimeListAdapter(private val onClick: (anime: Anime) -> Unit) :
     RecyclerView.Adapter<AnimeListAdapter.ListViewHolder>() {
 
     private var listData = ArrayList<Anime>()
@@ -49,7 +49,7 @@ class AnimeListAdapter(private val onClick: (id: String) -> Unit) :
                     .into(imgPoster)
                 textTitle.text = data.title
                 textType.text = data.type
-                itemView.setOnClickListener { onClick(data.animeId) }
+                itemView.setOnClickListener { onClick(data) }
             }
         }
     }

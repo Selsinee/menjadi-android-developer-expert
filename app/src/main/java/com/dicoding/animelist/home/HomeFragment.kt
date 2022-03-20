@@ -1,5 +1,6 @@
 package com.dicoding.animelist.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import com.dicoding.animelist.R
 import com.dicoding.animelist.core.data.Resource
 import com.dicoding.animelist.core.ui.AnimeListAdapter
 import com.dicoding.animelist.databinding.FragmentHomeBinding
+import com.dicoding.animelist.detail.DetailActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : Fragment() {
@@ -34,11 +36,9 @@ class HomeFragment : Fragment() {
         if (activity != null) {
 
             val animeAdapter = AnimeListAdapter { selectedData ->
-                Log.d("<TAG>", "detail")
-//                val intent = Intent(activity, DetailTourismActivity::class.java)
-//                intent.putExtra(DetailTourismActivity.EXTRA_DATA, selectedData)
-//                startActivity(intent)
-
+                val intent = Intent(activity, DetailActivity::class.java)
+                intent.putExtra(DetailActivity.EXTRA_DATA, selectedData)
+                startActivity(intent)
             }
 
             homeViewModel.animes.observe(viewLifecycleOwner) { anime ->

@@ -2,7 +2,7 @@ package com.dicoding.animelist.di
 
 import com.dicoding.animelist.core.domain.usecase.AnimeInteractor
 import com.dicoding.animelist.core.domain.usecase.AnimeUseCase
-import com.dicoding.animelist.favourite.FavoriteViewModel
+import com.dicoding.animelist.detail.DetailViewModel
 import com.dicoding.animelist.home.HomeViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -17,6 +17,5 @@ val useCaseModule = module {
 
 val viewModelModule = module {
     viewModel { HomeViewModel(get()) }
-    viewModel { FavoriteViewModel(get()) }
-//    viewModel { DetailTourismViewModel(get()) }
+    viewModel { DetailViewModel(get()) }
 }

@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
  */
 interface IAnimeRepository {
 
-    fun getAllAnimes(): Flow<com.dicoding.animelist.core.data.Resource<List<Anime>>>
+    fun getAllAnimes(): Flow<Resource<List<Anime>>>
 
     fun getFavoriteAnimes(): Flow<List<Anime>>
 
