@@ -76,14 +76,6 @@ class HomeFragment : Fragment() {
     }
 
     private fun initSearchView() {
-//        val typedValue = TypedValue()
-//        theme.resolveAttribute(R.attr.colorOnPrimary, typedValue, true)
-//        @ColorInt val color: Int = typedValue.data
-
-//        binding.searchView.findViewById<ImageView>(androidx.appcompat.R.id.search_button)
-//            .setColorFilter(R.color.Red)
-//        binding.searchView.findViewById<ImageView>(androidx.appcompat.R.id.search_close_btn)
-//            .setColorFilter(R.color.Red)
 
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {

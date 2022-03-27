@@ -1,6 +1,5 @@
 package com.dicoding.animelist.core.utils
 
-import android.util.Log
 import com.dicoding.animelist.core.data.source.local.entity.AnimeEntity
 import com.dicoding.animelist.core.data.source.remote.response.AnimeResponse
 import com.dicoding.animelist.core.domain.model.Anime
@@ -13,8 +12,6 @@ object DataMapper {
     fun mapResponsesToEntities(input: List<AnimeResponse>): List<AnimeEntity> {
         val animeList = ArrayList<AnimeEntity>()
         input.map {
-            Log.d("<TAG>", it.toString())
-            Log.d("<TAG>", it.title)
             val anime = AnimeEntity(
                 it.animeId,
                 it.title.ifEmpty { "" },
@@ -29,7 +26,6 @@ object DataMapper {
             )
             animeList.add(anime)
         }
-        Log.d("<TAG>", animeList.toString())
         return animeList
     }
 

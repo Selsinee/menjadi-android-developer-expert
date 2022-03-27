@@ -10,6 +10,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.dicoding.animelist.databinding.ActivityMainBinding
 import com.dicoding.animelist.home.HomeFragment
+import com.google.android.gms.safetynet.SafetyNet
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .commit()
             supportActionBar?.title = getString(R.string.app_name)
         }
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -65,5 +67,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    override fun onResumeFragments() {
+        super.onResumeFragments()
+        binding.navView.menu.getItem(0).isChecked = true
     }
 }
