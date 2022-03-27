@@ -10,7 +10,6 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.dicoding.animelist.databinding.ActivityMainBinding
 import com.dicoding.animelist.home.HomeFragment
-import com.google.android.gms.safetynet.SafetyNet
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
