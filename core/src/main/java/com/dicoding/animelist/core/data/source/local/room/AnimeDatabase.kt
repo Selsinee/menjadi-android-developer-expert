@@ -10,6 +10,6 @@ import com.dicoding.animelist.core.data.source.local.entity.AnimeEntity
 @Database(version = 1, entities = [AnimeEntity::class], exportSchema = false)
 abstract class AnimeDatabase : RoomDatabase() {
 
-    abstract fun animeDao(): com.dicoding.animelist.core.data.source.local.room.AnimeDao
+    abstract fun animeDao(): AnimeDao
 
 }

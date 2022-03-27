@@ -1,7 +1,7 @@
 package com.dicoding.animelist.detail
 
-import android.graphics.PorterDuff
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -9,7 +9,6 @@ import com.bumptech.glide.Glide
 import com.dicoding.animelist.R
 import com.dicoding.animelist.core.domain.model.Anime
 import com.dicoding.animelist.databinding.ActivityDetailBinding
-import com.example.moviecatalogue.ui.details.FadingImageView
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import kotlin.math.roundToInt
 
@@ -38,8 +37,8 @@ class DetailActivity : AppCompatActivity() {
                 tvEpisodes.text = getString(R.string.text_episode_template, it.episodes)
                 tvSource.text = getString(R.string.text_source_template, it.source)
                 tvType.text = getString(R.string.text_type_template, it.type)
-                scoreBar.progress = it.score.toDouble().roundToInt() * 10
-                scoreText.text = (it.score.toDouble() * 10).toString()
+                scoreBar.progress = (it.score.toDouble() * 10).roundToInt()
+                scoreText.text = (it.score.toDouble() * 10).roundToInt().toString()
 
                 Glide.with(this@DetailActivity)
                     .load(it.imageURL)

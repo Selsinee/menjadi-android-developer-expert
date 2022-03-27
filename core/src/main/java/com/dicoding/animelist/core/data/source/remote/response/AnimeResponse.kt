@@ -1,4 +1,4 @@
-package com.dicoding.animelist.core.data.source.remote.response;
+package com.dicoding.animelist.core.data.source.remote.response
 
 import com.google.gson.annotations.SerializedName
 
@@ -16,7 +16,7 @@ data class AnimeResponse (
     val synopsis: String,
 
     @SerializedName("aired")
-    val airedDate: com.dicoding.animelist.core.data.source.remote.response.AiredResponse,
+    val airedDate: AiredResponse,
 
     @SerializedName("type")
     val type: String,
@@ -31,5 +31,5 @@ data class AnimeResponse (
     val score: String,
 
     @SerializedName("images")
-    val image: com.dicoding.animelist.core.data.source.remote.response.ImageResponse
+    val image: ImageResponse
 )

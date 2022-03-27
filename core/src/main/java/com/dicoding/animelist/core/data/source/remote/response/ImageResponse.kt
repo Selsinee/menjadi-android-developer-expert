@@ -8,5 +8,5 @@ import com.google.gson.annotations.SerializedName
 data class ImageResponse (
 
     @SerializedName("jpg")
-    val jpg: com.dicoding.animelist.core.data.source.remote.response.ImageJPGResponse
+    val jpg: ImageJPGResponse
 )

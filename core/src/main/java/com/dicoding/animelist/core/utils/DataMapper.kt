@@ -14,7 +14,7 @@ object DataMapper {
         val animeList = ArrayList<AnimeEntity>()
         input.map {
             Log.d("<TAG>", it.toString())
-            Log.d("<TAG>", it.title.toString())
+            Log.d("<TAG>", it.title)
             val anime = AnimeEntity(
                 it.animeId,
                 it.title.ifEmpty { "" },

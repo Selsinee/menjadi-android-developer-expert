@@ -7,5 +7,5 @@ import com.google.gson.annotations.SerializedName
  */
 data class ListAnimeResponse(
     @SerializedName("data")
-    val data: List<com.dicoding.animelist.core.data.source.remote.response.AnimeResponse> = arrayListOf()
+    val data: List<AnimeResponse> = arrayListOf()
 )

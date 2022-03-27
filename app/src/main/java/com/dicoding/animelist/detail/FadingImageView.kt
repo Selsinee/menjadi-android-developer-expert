@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.ui.details
+package com.dicoding.animelist.detail
 
 import android.content.Context
 import android.content.res.Resources
